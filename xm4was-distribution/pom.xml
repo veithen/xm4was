@@ -84,7 +84,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.3</version>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -106,7 +106,7 @@
                 </executions>
                 <dependencies>
                     <!-- Upgrade the plexus-io dependency to make the workaround for
-                         MASSEMBLY-449 work with version 2.3 of the plugin -->
+                         MASSEMBLY-449 work with version 3.3.0 of the plugin -->
                     <dependency>
                         <groupId>org.codehaus.plexus</groupId>
                         <artifactId>plexus-io</artifactId>
