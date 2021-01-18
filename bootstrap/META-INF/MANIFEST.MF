@@ -6,3 +6,4 @@ Bundle-Version: 0.4.1.qualifier
 Export-Package: javax.annotation.security,
  javax.annotation.sql
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: lib/bootstrap.jar,lib/j2ee.jar,.

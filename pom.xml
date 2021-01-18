@@ -87,47 +87,7 @@
 		</repository>
 	</distributionManagement>
     <build>
-        <extensions>
-            <extension>
-                <groupId>com.github.veithen.cosmos</groupId>
-                <artifactId>wagon-p2</artifactId>
-                <version>20180302</version>
-            </extension>
-        </extensions>
         <plugins>
-            <plugin>
-                <groupId>com.github.veithen.alta</groupId>
-                <artifactId>alta-maven-plugin</artifactId>
-                <version>0.7.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>generate-properties</goal>
-                        </goals>
-                        <configuration>
-                            <name>bootclasspath</name>
-                            <value>%file%</value>
-                            <artifactSet>
-                                <artifacts>
-                                    <artifact>
-                                        <groupId>websphere-library</groupId>
-                                        <artifactId>bootstrap</artifactId>
-                                        <!-- <version>[8.5,8.6)</version> doesn't work? Downloading: p2:file:///D:/was_repo/websphere-library/bootstrap/%5B8.5,8.6)/bootstrap-%5B8.5,8.6).pom -->
-                                        <version>8.5.5.17</version>
-                                    </artifact>
-                                </artifacts>
-                            </artifactSet>
-                            <repositories>
-                                <repository>
-                                    <id>p2-was</id>
-                                    <name>WebSphere P2 Repository</name>
-                                    <url>p2:${was.p2.repo.url}</url>
-                                </repository>
-                            </repositories>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-maven-plugin</artifactId>
@@ -138,9 +98,6 @@
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-surefire-plugin</artifactId>
                 <version>${tycho-version}</version>
-                <configuration>
-                    <argLine>-Xbootclasspath/a:${bootclasspath}</argLine>
-                </configuration>
             </plugin>
             <plugin>
                 <!-- This is here to make the release process reproducible -->
