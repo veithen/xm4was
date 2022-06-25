@@ -8,7 +8,7 @@
         <dependency>
             <groupId>com.github.veithen.cosmos</groupId>
             <artifactId>cosmos-equinox</artifactId>
-            <version>0.4.3</version>
+            <version>0.5.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -23,7 +23,7 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.scr</artifactId>
-            <version>2.2.0</version>
+            <version>2.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.platform</groupId>
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>org.eclipse.platform</groupId>
             <artifactId>org.eclipse.equinox.p2.repository</artifactId>
-            <version>2.6.0</version>
+            <version>2.6.100</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.platform</groupId>
@@ -68,7 +68,7 @@
         <dependency>
             <groupId>org.eclipse.platform</groupId>
             <artifactId>org.eclipse.equinox.p2.publisher.eclipse</artifactId>
-            <version>1.4.2</version>
+            <version>1.4.100</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.platform</groupId>
@@ -83,7 +83,7 @@
         <dependency>
             <groupId>org.eclipse.platform</groupId>
             <artifactId>org.eclipse.equinox.p2.artifact.repository</artifactId>
-            <version>1.4.400</version>
+            <version>1.4.500</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.platform</groupId>
